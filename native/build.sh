@@ -9,6 +9,7 @@ node -e 'if (Number(process.versions.node.split(".")[0]) < 22) process.exit(1)' 
 xcrun --find swiftc >/dev/null
 APP="$PWD/dist/Sidequest.app"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources/app/public"
+cp LICENSE "$APP/Contents/Resources/LICENSE-sidequest.txt"
 bash native/build-icon.sh
 cp assets/Sidequest.icns "$APP/Contents/Resources/Sidequest.icns"
 swiftc -target arm64-apple-macos14.0 native/Sidequest.swift native/Calendars.swift -o "$APP/Contents/MacOS/Sidequest.next" -framework Cocoa -framework WebKit -framework EventKit -O

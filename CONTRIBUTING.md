@@ -24,4 +24,4 @@ Run `npm test` for logic/integration changes. For UI changes, verify the affecte
 
 Do not commit personal saves, OAuth downloads, API tokens, real task exports, screenshots containing private work, or built app/DMG files. Keep runtime credentials in Keychain and API responses free of tokens. Preserve the lockfile, single-writer guard, loopback binding, and mutation authentication.
 
-No project license has been selected yet; discuss licensing before assuming redistribution rights.
+Contributions are provided under the project’s [MIT License](LICENSE).

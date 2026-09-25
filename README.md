@@ -73,4 +73,4 @@ Run `npm test` before sharing changes. Tests use isolated saves and mocked exter
 
 ## License
 
-No open-source license has been selected yet. Repository visibility alone does not grant a general license to redistribute or reuse the code. Node.js bundled in locally built apps retains its own included license notices.
+Sidequest is available under the [MIT License](LICENSE). Node.js bundled in locally built apps retains its own included license notices.
