@@ -1,0 +1,15 @@
+{
+  "name": "sidequest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "build:mac": "bash native/build.sh",
+    "package:mac": "bash native/package-mac.sh"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

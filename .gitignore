@@ -1,0 +1,28 @@
+# Generated artifacts and local tooling
+dist/
+node_modules/
+.DS_Store
+*.log
+coverage/
+# Local profiles and private application data
+.sidequest*/
+.local/
+save.json
+save.*.json
+server.lock
+server.json
+connections.json
+google-connection.json
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+client_secret*.json
+client_secrets*.json
+credentials.json
+token.json
+tokens.json
+google-oauth*.json
+*.pem
+*.p12
+*.key
