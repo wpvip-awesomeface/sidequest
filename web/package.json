@@ -1,0 +1,15 @@
+{
+  "name": "sidequest-web",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@spacefast/zero": "0.4.1",
+    "preact": "10.29.7"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "scripts": {
+    "test": "node --test test/game.test.ts test/adventures.test.ts"
+  }
+}

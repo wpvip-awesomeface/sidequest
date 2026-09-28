@@ -1,0 +1,15 @@
+{
+  "$schema": "https://spacefast.com/schemas/sf.json",
+  "name": "Sidequest",
+  "runtime": {
+    "kind": "zero",
+    "server": "server/index.ts",
+    "client": "client/index.tsx"
+  },
+  "meta": {
+    "title": "Sidequest",
+    "description": "A pixel-art productivity RPG. Turn your to-dos into quests, earn loot, grow a cozy squad, and bring your Linear issues along. Small steps. Great adventures.",
+    "image": "https://sidequest.view.fast/assets/og.png",
+    "favicon": "/assets/favicon.ico"
+  }
+}
