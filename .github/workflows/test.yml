@@ -19,3 +19,7 @@ jobs:
           node-version: ${{ matrix.node }}
       # No dependencies to install; tests mock native and remote services.
       - run: npm test
+      # The web port's tests are TypeScript run directly by Node (23.6+).
+      - if: matrix.node == 24
+        working-directory: web
+        run: npm test

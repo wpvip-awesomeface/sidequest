@@ -1,0 +1,3 @@
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export function linearIssueURL(task){if(task?.source!=='linear')return null;try{const u=new URL(task.url);if(u.protocol!=='https:'||u.hostname!=='linear.app'||u.username||u.password||u.port||!/^\/[^/]+\/issue\/[^/]+(?:\/|$)/.test(u.pathname))return null;return u.href;}catch{return null;}}
+export function linearIssueLink(task){const url=linearIssueURL(task);return url?`<a class="linear-issue-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(task.identifier||task.title)} in Linear (opens in browser)" title="Open in Linear · browser">Open in Linear <span aria-hidden="true">↗</span></a>`:'';}
